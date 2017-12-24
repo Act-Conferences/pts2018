@@ -1,0 +1,66 @@
+[% WRAPPER ui title = global.conference.name %]
+
+<h1>[% global.conference.name %] in Lyon</h1>
+
+<h2>What is the Perl Toolchain Summit?</h2>
+
+<p>Up to this year, it was known as Perl QA Hackathon.</p>
+
+<p>A free of charge coding workshop for people involved in Quality Assurance, testing,
+packaging, CPAN, and other projects related to quality assurance. The workshop is not necessarily exclusive
+to Perl projects, however, many of the attendees will be planning to work on projects
+that have a direct benefit to the Perl language.
+</p>
+
+<p>The Perl Toolchain Summit is the next in a series of annual events, following on from successful Hackathons in:</p>
+
+<ul>
+<li><a href="http://2008.qa-hackathon.org/2008">Oslo 2008</a></li>
+<li><a href="http://2009.qa-hackathon.org/">Birmingham 2009</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2010">Vienna 2010</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2011">Amsterdam 2011</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2012">Paris 2012</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2013">North West England 2013</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2014">Lyon 2014</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2015">Berlin 2015</a></li>
+<li><a href="http://act.qa-hackathon.org/qa2016">Rugby 2016</a></li>
+</ul>
+
+<p>These events were a great success for the Perl and Open Source communities, as well as the attendees.</p>
+
+<h2>When, and where, is it happening?</h2>
+
+<p>The Perl Toolchain Summit is a four day event that takes place from Thursday <b>May 11<sup>th</sup></b>
+to Sunday <b>May, 14<sup>th</sup> 2017</b>, all the day long.</p>
+<p>The [% global.conference.name %] will be held in the beautiful city of Lyon, France, at the
+<a href="http://www.booking.com/hotel/fr/campanile-lyon-centre-forum-part-dieu.html?aid=313263">Campanile Lyon Centre Part-Dieu</a>.
+</p>
+
+[% news = global.news(4);
+   IF news.size > 3;
+     more = news.pop;
+   END;
+ %]
+
+[% IF news.size %]
+<h2>Latest News</h2>
+[% FOREACH item = news %]
+<div class="news-entry">
+ <h3 class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+ </h3>
+ <div class="news-text">
+  [% item.content %]
+ </div>
+</div>
+[% END %]
+[% END %]
+
+[% IF more %]
+<p>
+ <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
+</p>
+[% END %]
+
+[% END %]

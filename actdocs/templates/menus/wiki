@@ -1,0 +1,35 @@
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Wiki <b class="caret"></b></a>
+
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+[% WRAPPER menus/item %]
+ <a href="[% make_uri('wiki') %]"> Main page </a>
+[% END %]
+[% WRAPPER menus/item %]
+ <a href="[% make_uri('wiki?node=Attendees') %]"> Attendees </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Projects') %]"> Projects </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Expenses') %]"> Expenses details </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Travel') %]"> Travel details </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Accommodation') %]"> Accommodation details </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Catering') %]"> Catering details </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Results') %]"> Results </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Blogs') %]"> Blogs </a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki?node=Photos') %]"> Photos </a>
+[% END %]
+</ul>
+

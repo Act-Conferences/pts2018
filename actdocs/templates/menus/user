@@ -1,0 +1,34 @@
+<!-- user menu -->
+[% IF global.request.user %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('main') %]">{{Edit profile}}</a>
+   [% END %]
+   [% WRAPPER menus/section %]
+   Hello <a href="[% make_uri_info('user', global.request.user.user_id) %]">[% global.request.user.login %]</a> !
+   [% END %]
+   <ul>
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('logout') %]">{{Logout}}</a>
+   [% END %]
+   [% UNLESS global.request.user.participation OR global.config.closed %]
+     [% WRAPPER menus/item %]
+     <a href="[% make_uri('register') %]">{{Register}}</a>
+     [% END %]
+   [% END %]
+   </ul>
+[% ELSE %]
+   [% WRAPPER menus/section %]
+   Hello, would you like to log in?
+   [% END %]
+   <ul>
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('main') %]">{{Log in}}</a>
+   [% END %]
+   [% UNLESS global.config.closed %]
+     [% WRAPPER menus/item %]
+     <a href="[% make_uri('register') %]">{{New user}}</a>
+     [% END %]
+   [% END %]
+   </ul>
+[% END %]
+
