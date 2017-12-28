@@ -44,14 +44,14 @@
   <body id="Body">
     <div class="container-fluid">
       <div class="hero-unit">
-        <a href="/qa2017/" style="text-decoration:none;">
+        <a href="/pts2018/" style="text-decoration:none;">
           <div class="visible-phone">
             <div class="header-titre">
               <h1>
                 <img style="max-height:150px;" src="[% make_uri_info('pix', 'onion.png') %]" alt="Logo ognion"/><br />
-                    Perl Toolchain Summit 2017
+                    Perl Toolchain Summit 2018
               </h1>
-              <p> May 11-14, 2017 in Lyon </p>
+              <p> April 19-22, 2018 in Oslo</p>
             </div>
           </div>
 
@@ -67,8 +67,8 @@
                       &nbsp;
                     </td>
                     <td align="right" style='padding:10px'>
-                      <h1> Perl Toolchain Summit 2017
-                      <h2> May 11-14, 2017<br />in Lyon, France </h2>
+                      <h1> Perl Toolchain Summit 2018
+                      <h2> April 19-22, 2018<br />in Oslo, Norway</h2>
                     </td>
                   </tr>
                 </tbody>
@@ -88,7 +88,7 @@
                       &nbsp;
                     </td>
                     <td align="right" style='padding:10px'>
-                      <h2> May 11-14, 2017<br />in Lyon, France </h2>
+                      <h2> April 19-22, 2018<br />in Oslo, Norway</h2>
                     </td>
                   </tr>
                 </tbody>
