@@ -29,7 +29,7 @@ table.financial_report {
 <table class="financial_report">
 <tr><th></th><th class="amount">&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
              <th class="amount">$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-			 <th class="amount">£&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+             <th class="amount">£&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
 [% FOR section IN data ; title = section.shift %]
 [% total = [ 0, 0, 0 ] ; content = '';
    FOR row IN section ;
@@ -94,9 +94,9 @@ table.financial_report {
    paypal_fees_eur = ( 0               )                  # donations
                    + ( 0                                ) # travel refunds
    paypal_fees_usd = ( 0                              )   # individuals
-                   + ( 31.50             )                    # sponsors
-		   + ( 0           )                      # travel refunds
-   paypal_fees_gbp = 0                        
+                   + ( 31.50             )                # sponsors
+                   + ( 0           )                      # travel refunds
+   paypal_fees_gbp = 0
    bank_fees = ( 0                     )                  # bank fees
              + ( 0                    )                   # change fees
 
@@ -108,11 +108,11 @@ table.financial_report {
         ],
         [ 'Individual sponsors',
             [ 'PayPal "donate" button', paypal_donations_eur, paypal_donations_usd, paypal_donations_gbp ],
-			[ 'Direct payment (cash/wire)', '0' ],
+            [ 'Direct payment (cash/wire)', '0' ],
         ],
         [ 'Corporate sponsors',
-		    [ 'WenZPerl B.V.' ,'1000' ],
-		    [ 'Booking.com' ,'5000' ],
+            [ 'WenZPerl B.V.' ,'1000' ],
+            [ 'Booking.com' ,'5000' ],
         ],
         [ 'In-kind donations',
             [ '=WenZPerl B.V.', "Travel and accommodation for Liz and Wendy" ],
@@ -130,7 +130,7 @@ table.financial_report {
         ],
         [ 'Bank fees',
             [ 'PayPal donations', paypal_fees_eur, paypal_fees_usd, paypal_fees_gbp ],
-			[ 'Bank fees' , bank_fees ],
+            [ 'Bank fees' , bank_fees ],
             [ '?Estimate',                '200.00' ],
         ],
         [ 'Travel refunds',
