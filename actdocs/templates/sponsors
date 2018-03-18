@@ -18,5 +18,32 @@
 
   <a href="[% make_uri('donate.html') %]"><img src="[% make_uri('pix')%]/btn_donate_LG.gif" border="0" title="Donate to the summit using PayPal" alt="Donate to the summit using PayPal"></a>
 
+  [% WRAPPER isponsor
+  img = 'logo_bookingcom_225.png'
+  name = 'Booking.com'
+  url = 'http://booking.com/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'logo-cpanel.png'
+  name = 'cPanel'
+  url = 'https://cpanel.com/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'logo-maxmind.png'
+  name = 'MaxMind'
+  url = 'https://www.maxmind.com/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsorbronze
+  name = 'Perl Services'
+  url = 'http://www.perl-services.de/impressum.html'
+  %]
+  [% END %]
+
 </center>
 
