@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      [% PROCESS footer %]
+      [%# PROCESS footer %]
     </div>
     <script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
   </body>
