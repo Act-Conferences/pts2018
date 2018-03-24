@@ -36,12 +36,15 @@
           [% IF title %]
           <h1 class="page-header">[% title %]</h1>
           [% END %]
-          <div class="col-xs-12">
+          <div class="col-xs-8">
             [% content %]
+          </div>
+          <div class="col-xs-4">
+            [% PROCESS sponsors %]
           </div>
         </div>
       </div>
-      [%# PROCESS footer %]
+      [% PROCESS footer %]
     </div>
     <script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
   </body>
