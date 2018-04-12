@@ -1,6 +1,5 @@
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<i class="fa fa-bullhorn hidden-md hidden-lg"></i><span class="hidden-sm">Sponsors</span> <b class="caret"></b>
+<a href="[% make_uri('sponsorship.html') %]">
+    Sponsorship
 </a>
 <ul class="dropdown-menu">
 <li><a href="/pts2018/sponsors.html">Our Sponsors</a></li>
