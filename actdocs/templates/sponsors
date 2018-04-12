@@ -1,7 +1,7 @@
   [% isponsors = [] %]
   [% BLOCK ispartner %]
     [% WRAPPER menus/section %]
-    <p><a class="icon" href="[% url %]"><img class="icon" width="225" src="[% make_uri('pix')%]/[% img %]" alt="[% name %]" title="[% name %]" />[% type %] Partner</a></p>
+    <p><a class="icon" href="[% url %]"><img class="icon" width="225" src="[% make_uri('pix')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a><br> [% type %] Partner</p>
     [% END %]
   [% END %]
 
@@ -101,7 +101,7 @@
   [% END %]
 
   [% WRAPPER ispartner
-  img = 'logo_nuug-foundation.png'
+  img = 'logo-nuug-foundation.png'
   name = 'NUUG Foundation'
   url = 'http://www.nuugfoundation.no/en/'
   type = 'Local'
@@ -109,7 +109,7 @@
   [% END %]
 
   [% WRAPPER ispartner
-  img = 'logo_teknologihuset.png'
+  img = 'logo-teknologihuset-230x41.png'
   name = 'Teknologihuset'
   url = 'http://teknologihuset.no'
   type = 'Venue'
