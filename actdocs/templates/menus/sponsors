@@ -1,8 +1,3 @@
 <a href="[% make_uri('sponsorship.html') %]">
     Sponsorship
 </a>
-<ul class="dropdown-menu">
-<li><a href="/pts2018/sponsors.html">Our Sponsors</a></li>
-<li><a href="/pts2018/donate.html">Donate</a></li>
-</ul>
-</li>
