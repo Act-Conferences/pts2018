@@ -21,6 +21,9 @@
         <a href="[% make_uri('accommodation.html') %]"> Venue &amp; Accommodation </a>
     </li>
     <li>
+        <a href="[% make_uri('travel.html') %]"> Travel </a>
+    </li>
+    <li>
     </li>
 
     [% UNLESS global.request.user %]
