@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'qa2014.css') %]" />
 
     <!-- JavaScript sugar -->
-    <script src="[% make_uri_info('js', 'jquery-3.3.1.min.js') %]"></script>
+    <script src="[% make_uri_info('js', 'jquery-1.9.0.min.js') %]"></script>
     <script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
     <script>
         $('.dropdown-toggle').dropdown();
