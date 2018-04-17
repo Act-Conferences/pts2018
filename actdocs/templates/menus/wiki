@@ -14,9 +14,6 @@
 <a href="[% make_uri('wiki?node=Oslo') %]"> About Oslo </a>
 [% END %]
 [% WRAPPER menus/item %]
-<a href="[% make_uri('wiki?node=Getting Around') %]"> Getting Around </a>
-[% END %]
-[% WRAPPER menus/item %]
 <a href="[% make_uri('wiki?node=Food') %]"> Food </a>
 [% END %]
 [% WRAPPER menus/item %]

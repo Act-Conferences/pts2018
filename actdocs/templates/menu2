@@ -21,7 +21,7 @@
         <a href="[% make_uri('accommodation.html') %]"> Venue &amp; Accommodation </a>
     </li>
     <li>
-        <a href="[% make_uri('wiki?node=Getting%20Around') %]"> Travel to Oslo </a>
+        <a href="[% make_uri('wiki?node=Getting%20Around') %]"> Oslo Travel </a>
     </li>
     <li>
     </li>
