@@ -11,7 +11,7 @@
 <a href="[% make_uri('wiki?node=Projects') %]"> Projects </a>
 [% END %]
 [% WRAPPER menus/item %]
-<a href="[% make_uri('wiki?node=Travel') %]"> Travel &amp; Arrivals </a>
+<a href="[% make_uri('wiki?node=Oslo') %]"> About Oslo </a>
 [% END %]
 [% WRAPPER menus/item %]
 <a href="[% make_uri('wiki?node=Getting Around') %]"> Getting Around </a>
