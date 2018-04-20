@@ -59,6 +59,11 @@
   %]
   [% END %]
 
+  [% WRAPPER isponsorbronze
+  name = 'MongoDB'
+  url = 'http://www.mondodb.org/'
+  %]
+  [% END %]
 
   [% WRAPPER isponsorbronze
   name = 'Infinity Interactive'
